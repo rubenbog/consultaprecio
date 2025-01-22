@@ -1,6 +1,6 @@
 // Load the data from a text file
 async function loadData() {
-    const response = await fetch('PRLISTA.txt');
+    const response = await fetch('PRLISTA');
     const data = await response.text();
     return data.split('\n')
         .map(line => line.trim()) // Elimina espacios en blanco alrededor de cada línea
